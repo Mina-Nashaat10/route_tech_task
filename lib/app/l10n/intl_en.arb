@@ -1,1 +1,27 @@
-{}
+{
+    "@locale": "en",
+    "app_name": "App Name",
+    "english": "English",
+    "arabic": "Arabic",
+    "success": "Request successful.",
+    "bad_request_error": "Bad request. Please check your input and try again.",
+    "bad_response_error": "Bad response. The server returned an invalid response.",
+    "no_content": "No content found matching your request.",
+    "forbidden_error": "Access forbidden. You do not have permission to access this resource.",
+    "unauthorized_error": "Unauthorized access. Please log in with proper credentials.",
+    "not_found_error": "Resource not found. The requested resource could not be found.",
+    "conflict_error": "Conflict error. There is a conflict with the current state of the resource.",
+    "internal_server_error": "Internal server error. Please try again later.",
+    "unknown_error": "Unknown error occurred. Please contact support for assistance.",
+    "timeout_error": "Request timeout. The request took too long to process.",
+    "default_error": "An error occurred. Please try again later.",
+    "cache_error": "Cache error. Unable to retrieve data from cache.",
+    "no_internet_error": "No internet connection. Please check your internet connection and try again.",
+    "data_processing_error": "Data processing error. Unable to process the data.",
+    "no_items_found": "No items found.",
+    "try_again": "Try again",
+    "download_button_progress_title": "Please wait: {percent}%",
+    "egp": "EGP",
+    "review": "Review",
+    "search_hint": "what do you search for?"
+}
