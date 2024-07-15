@@ -36,6 +36,28 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
 
+  intl: any
+
+  ## network dependencies
+  dio: ^5.5.0
+  pretty_dio_logger: ^1.3.1
+  retrofit: ^4.1.0
+  internet_connection_checker: ^1.0.0
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  logger: ^2.3.0
+  get_it: ^7.7.0
+  shared_preferences: ^2.2.3
+  json_annotation: ^4.9.0
+  flutter_bloc: ^8.1.6
+  cached_network_image: ^3.3.1
+  ticker_text: ^2.1.0
+  loading_animation_widget: ^1.2.1
+  fade_shimmer: ^2.2.0
+  percent_indicator: ^4.2.3
+  ## Add Svg Suuport to Flutter
+  flutter_svg:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,6 +68,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+
+  build_runner:
+  json_serializable:
+
+  retrofit_generator:
+
+  assets_gen:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -88,3 +117,12 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_intl:
+  enabled: true
+  arb_dir: lib/app/l10n
+  output_dir: lib/app/l10n/generated
+
+assets_gen:
+  output: assets.gen.dart # Optional (default: assets.dart, Output position, always under lib/.)
+  gen_package_path: false # Optional (default: true, Whether the builder should generate extra const variable with package info, e.g. packages/${package}/path/to/foo.png)
