@@ -1,4 +1,5 @@
 # Flutter Task for Route Tech Summit
+![app_screenshot](https://github.com/user-attachments/assets/8a061f70-89d3-4712-adaf-749845e01593)
 
 ## Objective:
 To implement a Flutter application screen displaying a list of products in a RecyclerView-like format using the provided API.
