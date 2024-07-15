@@ -1,16 +1,17 @@
-# route_tech_task
+# Flutter Task for Route Tech Summit
 
-A new Flutter project.
+## Objective:
+To implement a Flutter application screen displaying a list of products in a RecyclerView-like format using the provided API.
 
-## Getting Started
+## Task Details:
 
-This project is a starting point for a Flutter application.
+Implement Product List Screen:
 
-A few resources to get you started if this is your first Flutter project:
+* Develop a screen fetching product list from a specified API.
+* Display the products in a scrollable list using Flutter's ListView widget to mimic the behavior of a RecyclerView.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## API Integration:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* Use the provided API endpoint to retrieve the list of products.
+* Handle API responses, including loading, success, and error states.
+* Parse the JSON data received from the API to extract product details.
