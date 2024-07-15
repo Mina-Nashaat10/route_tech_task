@@ -8,6 +8,7 @@ import 'package:route_tech_task/app/managers/theme_manager.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:route_tech_task/presentation/common/screens/splash/splash_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -22,6 +23,7 @@ class App extends StatelessWidget {
       navigatorKey: instance<GlobalKey<NavigatorState>>(),
       
       routes: instance<RouterManager>().routes,
+      initialRoute: SplashScreen.path,
       // routerDelegate: instance<RouterManager>().appRouter.routerDelegate,
       // routeInformationParser: instance<RouterManager>().appRouter.routeInformationParser,
 
