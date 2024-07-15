@@ -5,6 +5,7 @@ import 'package:route_tech_task/app/managers/router_manager.dart';
 import 'package:route_tech_task/app/managers/theme_manager.dart';
 import 'package:route_tech_task/app/services/internet_service.dart';
 import 'package:route_tech_task/data/data_source/local_data_source/shared_preference_source.dart';
+import 'package:route_tech_task/data/data_source/remote_data_source.dart';
 import 'package:route_tech_task/data/network/app_api.dart';
 import 'package:route_tech_task/data/network/dio_factory.dart';
 import 'package:route_tech_task/data/repository/repository_impl.dart';
@@ -37,9 +38,10 @@ Future<void> initializeAppDependencies() async {
   //app service client
   instance.registerLazySingleton<AppServiceClient>(() => AppServiceClient(dio));
   // Register your data sources here
+  instance.registerLazySingleton<RemoteDataSource>(() => RemoteDataSourceImpl(instance<AppServiceClient>()));
   
   // Register your repositories here
-  instance.registerLazySingleton<Repository>(() => RepositoryImpl());
+  instance.registerLazySingleton<Repository>(() => RepositoryImpl(instance<RemoteDataSource>(), instance<InternetService>()));
 
   // Register your Logger here
   instance.registerLazySingleton<Debugger>(() => Debugger());
